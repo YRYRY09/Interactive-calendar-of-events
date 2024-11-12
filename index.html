@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтерактивний Календар Подій</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div id="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&gt;</button>
+        </div>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>Пн</th>
+                    <th>Вт</th>
+                    <th>Ср</th>
+                    <th>Чт</th>
+                    <th>Пт</th>
+                    <th>Сб</th>
+					<th>Нд</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+    </div>
+
+    <!-- Модальне вікно для подій -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Додати / Редагувати подію</h2>
+            <input type="text" id="event-title" placeholder="Назва події">
+            <textarea id="event-description" placeholder="Опис події"></textarea>
+            <button id="save-event">Зберегти</button>
+            <button id="delete-event">Видалити</button>
+        </div>
+    </div>
+
+    <!-- Напис created by -->
+    <div class="footer">
+        <p>Created by Yurii Obukhovskyi</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Created by Yurii Obukhovskyi -->

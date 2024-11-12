@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.calendar-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar th, #calendar td {
+    width: 14.28%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#month-year {
+    font-size: 1.5em;
+}
+
+#event-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 300px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+.event-day {
+    background-color: #f0e68c;
+    border-radius: 50%;
+    position: relative;
+}
+
+.event-day .event-marker {
+    font-size: 0.7em;
+    color: #333;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+/* Created by Yurii Obukhovskyi */
